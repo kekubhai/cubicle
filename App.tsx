@@ -3,7 +3,6 @@ import { StatusBar } from 'expo-status-bar';
 import { Navigation } from './navigation';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import './global.css';
 
 export default function App() {
   return (
