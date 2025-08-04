@@ -82,11 +82,14 @@ export const Navigation = () => {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         {!isAuthenticated ? (
-          <Stack.Screen name="Auth" component={AuthScreen} />
+          <>
+            <Stack.Screen name="Auth" component={AuthScreen} />
+            <Stack.Screen name="Main" component={MainTabs} />
+          </>
         ) : (
           <Stack.Screen name="Main" component={MainTabs} />
         )}
       </Stack.Navigator>
     </NavigationContainer>
   );
-}; 
+};
